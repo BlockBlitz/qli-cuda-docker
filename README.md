@@ -19,7 +19,7 @@ This image does not currently suppot the Payment ID parameter for the pool.
 
 The following command starts the container with the specified parameters
 
-`docker run --device=/dev/kfd --device=/dev/dri --group-add=video --security-opt seccomp=unconfined -e WALLET_ADDRESS=my-wallet-address -e WORKER_NAME=my-worker -e ACCESS_TOKEN=my-access-token -e THREAD_COUNT=12 -e USE_GPU=true ghcr.io/BlockBlitz/qli-zluda:latest`
+`docker run --device=/dev/kfd --device=/dev/dri --group-add=video --security-opt seccomp=unconfined -e WALLET_ADDRESS=my-wallet-address -e WORKER_NAME=my-worker -e ACCESS_TOKEN=my-access-token -e THREAD_COUNT=12 -e USE_GPU=true ghcr.io/BlockBlitz/qli-cuda:latest`
 
 Or more favorably, via the included docker-compose file.
 
