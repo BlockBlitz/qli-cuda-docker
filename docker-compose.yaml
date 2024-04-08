@@ -1,0 +1,16 @@
+services:
+  qli-cuda:
+    image: ghcr.io/blockblitz/qli-cuda:1.9.0
+    restart: unless-stopped
+    group_add:
+      - 985 # video
+    security_opt:
+      - seccomp=unconfined
+    devices:
+      - /dev/kfd
+      - /dev/dri
+    environment: 
+      THREAD_COUNT: my-thread-count 
+      ACCESS_TOKEN: my-access-token 
+      WORKER_NAME: my-worker-name
+      USE_GPU: true
