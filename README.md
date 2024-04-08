@@ -1,4 +1,4 @@
-# QLI-Client running under ZLUDA
+# QLI-Client with Cuda
 
 This Dockerfile and run script are all you need to run QLI-Client for Nvidia GPUs. This image also supports CPU mining in parellel, however is not space efficient for only CPU mining. For alternative containers, see the [Qli-Client](https://github.com/BlockBlitz/qli-client-docker) image for CPU only mining or [Qli-Zluda](https://github.com/BlockBlitz/qli-zluda-docker) image for AMD GPU mining. 
 
